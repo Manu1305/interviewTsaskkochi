@@ -1,14 +1,16 @@
 import React from "react";
-import img2 from "../../public/Images/img2.jpg";
+import img2 from "../Images/img2.jpg";
+import img1 from '../Images/img1.jpg'
+import img3 from '../Images/img3.jpg'
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/custom-animations/cube-animation.css";
 import { Fade } from "react-awesome-reveal";
 import { TypeAnimation } from "react-type-animation";
-
+import membership from '../Images/membership.jpg'
 const courosel = [
   {
-    imgUrl: img2,
+    imgUrl: img1,
     text: "Lower",
     text1: " interest rate",
   },
@@ -18,7 +20,7 @@ const courosel = [
     text1: "free payment",
   },
   {
-    imgUrl: img2,
+    imgUrl: img3,
     text: "Discount on",
     text1: "Materials",
   },
@@ -36,7 +38,7 @@ function Content() {
           <div style={{ width: "300px" }}>
             <img
               className="h-48 w-48 md:w-64 xl:ml-12 sm:ml-0"
-              src="/public/Images/membership.jpg"
+              src={membership}
               alt=""
             />
           </div>
@@ -54,13 +56,9 @@ function Content() {
         </div>
       </Fade>
       <div style={{ width: "70%", height: "100%" }} className="ml-4">
-       
         <TypeAnimation
           className="pt-8 text-green-700 text-2xl font-bold"
-          sequence={[
-            "  UNLOCK PREMIUM FEATURES NOW",
-            1000,
-          ]}
+          sequence={["  UNLOCK PREMIUM FEATURES NOW", 1000]}
           wrapper="span"
           cursor={false}
           repeat={Infinity}

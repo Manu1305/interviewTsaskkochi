@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Components/Header";
-import celeb from "../../public/Images/celeb.png";
+import celeb from "../Images/celeb.png";
 import { Link, useNavigate } from "react-router-dom";
 function Login() {
      const navigate = useNavigate();
